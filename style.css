@@ -1,0 +1,58 @@
+html,
+body {
+  display: 'block';
+  height: 100%;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  background-color: rgb(10, 10, 20);
+  overflow: hidden;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#container {
+  border: 0;
+  height: 70%;
+  background: #828685;
+  overflow: hidden;
+  margin: 0;
+}
+
+#container::-webkit-scrollbar{
+  display: none;
+}
+
+.player,
+.obstacle {
+  position: relative;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ground{
+  height: 10px;
+  background-color: burlywood;
+  margin: 0;
+  background-image: url(./ground/ground.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.score{
+  color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Calibri;
+}
+
+.score h3{
+  font-size: 50pt;
+}
